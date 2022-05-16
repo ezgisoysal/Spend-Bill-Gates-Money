@@ -1,38 +1,203 @@
-.App {
+html,
+body {
+  background-color: #DFDFDE;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px 0;
+  background-color: #fff;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-fun {
+  text-align: left;
+  margin-left: 170px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header {
+  font-size: 32px;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 165px;
+  margin-right: 180px;
+}
+
+.money {
+  color: #fff;
+  background-color: #2ecc71;
+  background: linear-gradient(180deg,#2ecc71,#1abc9c);
+  padding: 20px;
+  margin: 14px 0;
+  font-family: Roboto,sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+  margin-left: 165px;
+  margin-right: 180px;
+}
+
+.gates {
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 125px;
+  height: 125px;
+  margin: 10px auto 25px;
+  border-radius: 125px;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 165px;
+  margin-right: 165px;
+}
+.my-masonry-grid_column {
+  
+  background-clip: padding-box;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: white;
+  margin-bottom: 14px;
+  height:325px;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  padding: 30px;
+  height: 120px;
 }
+
+.name {
+  font-size: 22px;
+    font-weight: 700;
+}
+
+.price {
+  font-size: 20px;
+  color: #24c486;
+}
+
+.triple {
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  background: #f1f2f6!important;
+  border: none;
+  color: #333;
+  cursor: auto;
+  touch-action: manipulation;
+}
+
+.sell {
+  width: 90px;
+  height: 40px;
+  margin-right: 10px;
+  background: linear-gradient(180deg,#f53b82,#f53b57);
+}
+
+.buy {
+  width: 90px;
+  height: 40px;
+  margin-left: 10px;
+  background: linear-gradient(180deg,#2ecc71,#1abc9c);
+}
+
+.input {
+  width: 90px;
+  height: 34px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.list {
+  margin-left: 165px;
+  margin-right: 180px;
+  background-color: white;
+  margin-bottom: 14px;
+}
+
+.list-header {
+  font-size: 28px;
+  padding: 15px 15px 25px;
+  font-weight: 700;
+}
+
+.received {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px 0;
+  font-size: 18px;
+  grid-template-columns: 170px 45px 75px;
+}
+
+.list-name {
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.list-amount {
+  text-align: left;
+}
+
+.list-cost {
+  color: #24c486;
+  text-align: right;
+}
+
+.account {
+  font-weight: 700;
+  max-width: 300px;
+  border-top: 1px solid #333;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-total {
+  color: #24c486;
+  text-align: right;
+  font-size: 18px;
+}
+
